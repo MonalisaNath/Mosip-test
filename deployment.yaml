@@ -13,9 +13,9 @@ spec:
     metadata:
       labels:
         env: dev
-  spec:
-    cotainers:
-    - name: app-ser-prereg
-      image: mosipid/pre-registration-application-service:latest
-      ports:
-      - containerPort: 80
+    spec:
+      cotainers:
+      - name: app-ser-prereg
+        image: mosipid/pre-registration-application-service:latest
+        ports:
+        - containerPort: 80
