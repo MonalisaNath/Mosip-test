@@ -14,7 +14,7 @@ spec:
       labels:
         env: dev
     spec:
-      cotainers:
+      containers:
       - name: app-ser-prereg
         image: mosipid/pre-registration-application-service:latest
         ports:
