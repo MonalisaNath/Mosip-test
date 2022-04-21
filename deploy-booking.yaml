@@ -14,7 +14,7 @@ spec:
       labels:
         env: dev
     spec:
-      cotainers:
+      containers:
       - name: app-booking
         image: mosipid/pre-registration-booking-service:latest
         ports:
