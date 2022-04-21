@@ -14,7 +14,7 @@ spec:
       labels:
         env: dev
     spec:
-      cotainers:
+      containers:
       - name: app-datasync
         image: mosipid/pre-registration-datasync-service:latest
         ports:
