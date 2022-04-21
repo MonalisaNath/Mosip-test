@@ -1,0 +1,21 @@
+apiVersion : apps/v1
+kind : Deployment
+metadata : 
+  name : deploy-booking
+  labels:
+    env: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      env: dev
+  template:
+    metadata:
+      labels:
+        env: dev
+    spec:
+      cotainers:
+      - name: app-booking
+        image: mosipid/pre-registration-booking-service:latest
+        ports:
+        - containerPort: 80
